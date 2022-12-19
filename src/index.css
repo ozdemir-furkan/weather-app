@@ -1,0 +1,197 @@
+:root{
+    --title-color: #00eeff;
+    --search-background-color:#eaeaea;
+    --search-color:rgb(0, 0, 0);
+    --color-default:#fff;
+    --color-result-back:rgba(255 , 255, 255, 0.2);
+    --other-back-color:rgba(102, 101, 101, 0.438);
+    --country-text-color:#baf3e9;
+    --detail-color:#baf3e9;
+    --other-text-color:rgb(255, 255, 255);
+
+
+    
+    --title-font-size: 48px;
+    --search-font-size:22px;
+    --country-font-size:65px;
+    --degree-font-size:95px;
+    --status-font-size:38px;
+    --other-text-size:40px;
+    --other-status-size:20px;
+
+    --font-family: 'Poppins', sans-serif;
+    
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow: hidden;
+    font-family: var(--font-family);
+
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: 0;
+
+}
+.background .background-picture{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -5;
+    right: 0;
+    bottom: 0;
+
+}
+.background .overlay{
+    position: absolute;
+    z-index: -3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+
+}
+#title{
+    text-align: center;
+    margin-top: 40px;
+    color:var(--title-color);
+    font-size: var(--title-font-size);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.search .search-input{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    border: none;
+    font-size:var(--search-font-size);
+    background-color: var(--search-background-color);
+    color:var(--search-color);  
+ }
+
+.result{
+    position: relative;
+    margin-top: 100px;
+    
+    
+}
+.result .country{
+    color:var(--country-text-color);
+    font-size: var(--country-font-size);
+    text-align: center;
+    font-family: var(--font-family);
+}
+.result .detail{
+    
+    border-radius: 25px;
+    margin-top:80px;   
+    width: 100%;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.result .detail .degree{
+    margin-top: 10px;
+
+}
+.result .detail .degree1{
+    color:var(--detail-color);
+    font-size: var(--degree-font-size);
+    font-weight: bold;
+    
+}
+.result .status{
+    color:var(--detail-color);
+    font-size: var(--status-font-size);
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: -50px;
+    
+    
+
+}
+.result .detail .status{
+    color:var(--detail-color);
+    font-size: var(--status-font-size);
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.result .other{
+    border-radius: 45px;
+    background-color: var(--other-back-color);
+    margin-top: 110px;
+    width: 70%;
+    margin-left: 15%;
+    display:flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+.result .other .feels-like-text{
+    font-size: var(--other-text-size);
+    color:var(--other-text-color);
+    
+    
+}
+.result .other .feels-like{
+    color:var(--other-text-color);
+    font-size: var(--other-status-size);
+    margin-left: 10px;
+    
+    
+}
+.result .other .humidity-text{
+    font-size: var(--other-text-size);
+    color:var(--other-text-color);
+    
+    
+    
+}
+.result .other .humidity{
+    color:var(--other-text-color);
+    font-size: var(--other-status-size);
+    margin-left: 40px;
+    
+}
+.result .other .wind-text{
+    font-size: var(--other-text-size);
+    color:var(--other-text-color);
+}
+.result .other .wind{
+    color:var(--other-text-color);
+    font-size: var(--other-status-size);
+    margin-left: 80px;
+    
+
+}
+
+
+@media screen and (min-width:1000px){
+    .app{
+        width: 60%;
+        height: 100vh;
+        margin:0 auto;
+        background-color: rgba(0, 0, 0, 0.404);
+    }
+    
+}
+
